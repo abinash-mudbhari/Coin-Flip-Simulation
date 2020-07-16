@@ -2,10 +2,9 @@
 # write some code that simulates flipping a single coin however many times the user decides. 
 # The code should record the outcomes and count the number of tails and heads.
 import random
-
-
-# flip the nos and count the heads and tails
+# main function that executes codes for toss
 def main():
+        # user input
 	num = int(input("enter the no of flips:"))
 	
 	heads = 0
@@ -13,6 +12,7 @@ def main():
 	head_list = []
 	tail_list = []
 	for i in range(num):
+          # flip of coin
 		flip = random.randint(0,1)
 		if flip == 0:
 			print("you got head")
@@ -22,6 +22,5 @@ def main():
 			tails += 1
 	print("HEADS:",heads)
 	print("TAILS:",tails)
-
-# ask user input how many numbers of flip
+# calling a function
 main()
